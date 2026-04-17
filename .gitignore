@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts (large files)
+*.onnx
+*.pt
+*.bin
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Results (keep CSVs, ignore large intermediates)
+results/*.pkl
+results/*.npy
