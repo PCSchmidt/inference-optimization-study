@@ -77,6 +77,11 @@ Run all cells top-to-bottom. The full benchmark suite takes ~5 minutes on a mode
 
 See [DEMO_GUIDE.md](DEMO_GUIDE.md) for a guided walkthrough with expected outputs and talking points.
 
+## PDF Report
+
+A fully executed notebook with all outputs is available as a PDF:  
+[`notebooks/inference_optimization_study.pdf`](notebooks/inference_optimization_study.pdf)
+
 ## Project Structure
 
 ```

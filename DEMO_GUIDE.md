@@ -11,6 +11,11 @@ Demonstrate:
 - **17× throughput improvement** (48 → 816 req/s) with <4% embedding accuracy deviation
 - Production cost analysis translating performance gains into dollar savings
 
+## Quick View (No Setup Required)
+
+A fully executed notebook with all outputs is available as a PDF:  
+[`notebooks/inference_optimization_study.pdf`](notebooks/inference_optimization_study.pdf)
+
 ## Recommended Demo Duration
 
 - **Short version:** 3–5 minutes (skip to results, walk through charts and conclusions)

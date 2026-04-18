@@ -34,3 +34,9 @@ Thumbs.db
 # Results (keep CSVs, ignore large intermediates)
 results/*.pkl
 results/*.npy
+
+# Notebook build artifacts
+notebooks/*.tex
+notebooks/*.html
+notebooks/*_files/
+notebooks/*_v1.ipynb
