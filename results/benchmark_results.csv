@@ -1,0 +1,6 @@
+Configuration,p50 (ms),p95 (ms),p99 (ms),Throughput (req/s),Peak Memory (MB)
+PyTorch (single),12.095,19.841,34.668,67.5,0.0
+PyTorch (batch=32),14.153,19.047,21.649,195.2,0.01
+ONNX Runtime (single),8.475,36.06,52.064,150.5,0.01
+ONNX + INT8 (single),3.181,6.329,7.645,234.4,0.0
+ONNX + INT8 (batch=32),2.945,6.952,9.449,602.0,0.0
