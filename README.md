@@ -43,9 +43,12 @@ This study explores how far we can push CPU throughput **without GPU hardware, m
 
 The optimization pipeline is progressive — each step builds on the previous:
 
-```
-PyTorch baseline    →    ONNX export    →    INT8 quantization    →    Adaptive batching
-  (naive)              (faster runtime)     (smaller + faster)       (amortize overhead)
+```mermaid
+flowchart LR
+    A["PyTorch Baseline\n22.7M params, 88 MB\n68 req/s, 12.1ms p50"] -->|"ONNX Export\nHuggingFace Optimum"| B["ONNX Runtime\n88 MB\n151 req/s"]
+    B -->|"INT8 Dynamic\nQuantization"| C["Quantized ONNX\n23 MB, -74%\n234 req/s"]
+    C -->|"Batch Size Sweep\n1 to 64"| D["Adaptive Batching\n23 MB\n602 req/s, 2.9ms p50"]
+    D --> E["Cosine Similarity\nValidation\n0.962 mean vs baseline"]
 ```
 
 1. **Baseline**: Load `all-MiniLM-L6-v2` via `sentence-transformers` and measure single-request + batched throughput on CPU
